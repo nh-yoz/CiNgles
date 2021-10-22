@@ -1,0 +1,501 @@
+/*************************************************/
+/******************    FONTS    ******************/
+/*************************************************/
+
+@font-face {
+    font-family: 'Avenir';
+    font-style: 'normal';
+    font-weight: 700;
+    font-display: swap;
+    src: url('fonts/AvenirLTStd-Black.otf');
+}
+
+
+@font-face {
+    font-family: 'Avenir';
+    font-style: 'normal';
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/AvenirLTStd-Roman.otf');
+}
+
+@font-face {
+    font-family: 'Avenir';
+    font-style: 'normal';
+    font-weight: 300;
+    font-display: swap;
+    src: url('fonts/AvenirLTStd-Book.otf');
+}
+
+
+* {
+    box-sizing: border-box;
+    border:none;
+}
+
+html {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color:black;
+    background-color: white;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir', 'sans-serif';
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-style: normal;
+}
+
+
+header {
+    margin: 0 1em 0 0;
+    display: grid;
+    /* column-gap: 50px; */
+    row-gap: 10px;
+    /* grid-template-columns: repeat(auto-fit, minmax(50px, 8fr) ); */
+    grid-template-columns: repeat(1, 1em);
+    grid-template-areas: 
+    "logo logo cartlogin cartlogin cartlogin cartlogin cartlogin nav"
+    "picSearch picSearch searchForm searchForm searchForm searchForm searchForm searchForm" 
+    "sortBy sortBy sortBy sortBy sortBy sortBy sortBy sortBy";
+
+}
+
+#logo {
+    grid-area: logo;
+    align-self: start;
+
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.navbar li {
+    margin-right: 2em;
+}
+
+
+.picSearch {
+    grid-area: picSearch;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 1em;
+}
+
+
+.searchForm {
+    grid-area: searchForm;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sajari {
+    grid-area: sajari;
+    display: flex;
+}
+
+#sajariContent {
+    margin: 0 0 0 1.5em;
+    margin-bottom: 0.5em;
+
+}
+
+.sajari img {
+    margin-left: 1.5em;
+    margin-bottom: -0.1em;
+}
+
+.cartlogin {
+    grid-area: cartlogin;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.cart {
+    margin-right: 3em;
+}
+
+.sortBy {
+    grid-area: sortBy;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+/* MAIN */
+
+main {
+    margin:1em 1em;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: auto repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 50px;  
+}
+
+
+
+.infoArticle {
+    display: flex;
+    padding: 2em;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+article img {
+    width: 100%;
+}
+
+
+.articleInfo {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* FOOTER */
+
+footer {
+    margin: 5rem 1rem;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+ul {
+    display: flex;
+    justify-content: start;
+    
+}
+
+footer li {
+    margin: 1.1em;
+}
+
+footer ul li a{
+
+    color:black;
+    padding: 1em 1.3em; 
+}
+
+footer ul li a:hover {
+    opacity: 1;
+    color:white;
+    background: black;
+    padding: 1em 1.3em;
+    
+}
+
+
+h1 {
+    font-family: 'Avenir', 'sans-serif';
+    font-weight: 700;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+nav {
+    font-weight: 700;
+}
+
+
+.bold {
+    font-weight: 700;
+}
+
+nav ul, footer ul {
+    list-style-type: none;
+    padding:0;
+}
+
+.cartlogin .login{
+    display:none;
+}
+
+
+.lineform {
+    border-bottom: 2px solid black;
+    flex-grow:4;
+}
+
+.lineform > form > input,.lineform > form > input:hover {
+    width:100%;
+    border:0;
+}
+
+div.searchForm {
+    display:flex;
+    flex-wrap: wrap;
+    align-items:bottom;
+    justify-content:right;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none; /* Removes X from search-field */
+}
+
+.stars img {
+    width:1em;
+    height:1em;
+}
+
+.picSearch img {
+    width:2.5em;
+    height:2.5em;
+}
+
+.category {
+    color:#97989c;
+}
+
+input {
+    font-family: 'Avenir', 'sans-serif';
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    opacity:0.7;
+}
+
+.navbar {
+    background-image: url("img/burger.svg");
+    background-repeat: no-repeat;
+    background-size: 2em;
+    background-position: right;
+    cursor: pointer;
+}
+
+
+
+.navbar ul {
+    display:none;
+} 
+
+
+.navbar:active ul{
+    display:list-item;
+} 
+
+
+header div.sortBy {
+    display:none;
+}
+
+
+article.filter, article.responsiveFilters{
+    display:flex;
+    flex-direction: column;
+    align-items: middle;
+    align-content: space-between;
+}
+
+
+article.filter > div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+article.filter {
+    display:none;
+}
+
+    
+
+article.responsiveFilters, article div.sortBy{
+    display:flex;
+}
+
+
+.cartlogin img, .buttonCart img {
+    width:1.3em;
+    height:1.3em;
+}
+
+.filter select, .sortBy select, .filter label{
+    font-family: 'Avenir', 'sans-serif';
+    font-size: 1em;
+    width:100%;
+    height:2em;
+    border: 0;
+    border-bottom: 2px solid #e8e8e8;
+    background: none;
+}
+
+.filter label {
+    border:0;
+}
+
+.sortBy select {
+    font-size:1.3em;
+    height:1.3em;
+}
+
+#priceMinMax {
+    display:flex;
+    justify-content: space-between;
+}
+
+input[type=range].priceRange {
+    /* height: 2em;
+    color: yellow;
+    background: transparent;
+    /* background-image: linear-gradient(to bottom, #FFF, #999, #FFF); */
+    /* background-position: center;
+    background-repeat: no-repeat; */ 
+    /* background-size: 100% 25%; */
+}
+
+input[type=range].priceRange::-webkit-slider-runnable-track { /*CHROME*/
+    /* height: 2em;
+    color: #FFF;
+    background: transparent; */
+    /* background-image: linear-gradient(to bottom, #FFF, #999, #FFF); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat;
+    background-size: 100% 25%; */
+  }
+  /* le curseur */
+
+input[type=range].priceRange::-webkit-slider-thumb { /*CHROME*/
+    /* width: 2em;
+    padding: 0.0em; /* largeur du bord */
+    /* border: 3px solid #888;
+    border-radius: 50%; */ 
+/*    box-shadow: 0 0 .5em #FFF inset; 
+  /*  background: linear-gradient(#888, #FFF) content-box,          
+                linear-gradient(-90deg, #888, #DDD) border-box;   le bord */
+/*    background-color:none; */
+}
+
+
+@media only screen and (min-width:900px) {
+    main {  
+        grid-template-columns: repeat(1, 2fr 2fr 2fr 2fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin:5rem 4rem;
+    }
+
+    header {
+      margin: 0 4em;
+      display: grid;
+      column-gap: 50px;
+      row-gap: 10px;
+      /* grid-template-columns: repeat(auto-fit, minmax(50px, 8fr) ); */
+      grid-template-columns: repeat(1, 90px);
+      grid-template-areas: 
+      "logo nav nav nav nav nav cartlogin cartlogin"
+      "picSearch searchForm searchForm searchForm searchForm searchForm sortBy sortBy";
+  
+    }
+
+    .filter {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    
+    }
+    
+    .responsiveFilters {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    
+    }
+
+    footer {
+        width: 50%;
+        margin: 5rem 4rem;
+    }
+
+
+
+    .sajari {
+        border-bottom: 2px solid black;
+    }
+
+    .navbar ul, .navbar:active ul { /* Shows the menu-items horizontally */
+        display:flex;
+    } 
+    
+    .responsiveFilters {
+        display:none;
+    }
+    
+
+    .navbar {
+        background: none;
+        cursor: auto;
+    }
+    
+    div.searchForm {
+        flex-wrap: nowrap;
+    }
+
+    .login {
+        display:none;
+    }
+
+    .cartlogin .login{
+        display:inline;
+    }
+
+
+    header>div.sortBy {
+        display:flex;
+    }
+    
+    
+    article.responsiveFilters {
+        display:none;
+    }
+
+    article.filter {
+        display:flex;
+    }
+    
+
+    input {
+        font-size: 2em;
+    }
+    
+    .sortBy select {
+        font-size:2em;
+    }
+    
+
+}

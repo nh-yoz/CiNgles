@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insolite Shop</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#"><img src="img/Logo.png"></a>
+        </div>
+        <nav class="navbar">
+            <!-- <img src="img/burger.svg"> -->
+            <ul>
+                <li class="login"><a href="#">LOGIN</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">MAGAZINE</a></li>
+            </ul>
+        </nav>
+        <div class="cartlogin">
+            <div class="cart"><a href="#"><img src="img/CartButton.svg" alt="Cart button"></a></div>
+            <div class="login"><a href="#">LOGIN</a></div>
+        </div>
+        <div class="picSearch">
+            <a href="#"><img src="img/Search.svg" alt="Search image"></a>
+        </div> <!-- picto -->
+        <div class="searchForm">
+            <div class="lineform">
+                <form>
+                    <input type="search" name="search" value="living room" aria-label="Search through site content">
+                </form>
+            </div>
+            <div class="sajari"><!-- Sajari Logo -->
+                <div id="sajariContent">Powered by <span class="bold">Algolia</span><img src="img/SajariLogo.png"></div>
+            </div> 
+        </div> <!-- search input -->
+        <div class="sortBy"> <!-- Best match -->
+            <select>
+                <option value="0">Best match</option>
+                <option value="1">Price</option>
+                <option value="2">Usefulness</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <article class="responsiveFilters">
+            <div class="sortBy"> <!-- Best match -->
+                <select>
+                    <option value="0">Best match</option>
+                    <option value="1">Price</option>
+                    <option value="2">Usefulness</option>
+                </select>
+            </div>    
+            <div class="sortBy"> <!-- Best match -->
+                <select>
+                    <option value="0">Filters</option>
+                    <option value="1">Collection</option>
+                    <option value="2">Color</option>
+                    <option value="2">Category</option>
+                    <option value="2">Price Range</option>
+                </select>
+            </div>
+        </article>
+        <article class="filter">
+            <div>
+                <p class="category">FILTER BY</p>
+            </div>
+            <div>
+                <select>
+                    <option value="0">Collection</option>
+                    <option value="1">Collection #1</option>
+                    <option value="2">Collection #2</option>
+                </select>
+            </div>
+            <div>
+                <select>
+                    <option value="0">Color</option>
+                    <option value="1">Blue</option>
+                    <option value="2">White</option>
+                </select>
+            </div>
+            <div>
+                <select>
+                    <option value="0">Category</option>
+                    <option value="1">Outlife</option>
+                    <option value="2">Decoration</option>
+                    <option value="2">Gardening</option>
+                </select>
+            </div>
+            <div>
+                <label for="priceRange">Price range</label>
+                <input type="range" class="priceRange" id="priceRange" name="priceRange" min="0" max="100" value="90" step="10">
+                <div id="priceMinMax">
+                    <div id="priceMin">$0</div>
+                    <div id="priceMax">$10,000+</div>
+                </div>
+                <!-- <select>
+                    <option value="0">Price Range</option>
+                    <option value="2">BMW</option>
+                </select> -->
+            </div>
+        </article> <!-- filter -->
+        <article>
+            <div>
+                <img src="img/arrosoir.jpg" alt="useful watering can">
+            </div> <!-- image -->
+            <div class="infoArticle"> <!-- infos -->
+                <div>
+                    <h1>Coombes</h1>
+                    <p class="category">LOUNGE</p>
+                    <div class="stars">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/Star.svg">
+                    </div>
+                </div> <!-- title, category, rating -->
+                <div class="buttonCart">
+                    <p class="price">$2,600</p>
+                    <a href="#"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                </div> <!-- price, add to chart -->
+            </div>
+        </article>
+        <article>
+            <div>
+                <img src="img/assiete.jpg" alt="plate designed fork">
+            </div> <!-- image -->
+            <div class="infoArticle"> <!-- infos -->
+                <div>
+                    <h1>Coombes</h1>
+                    <p class="category">LOUNGE</p>
+                    <div class="stars">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/Star.svg">
+                    </div>
+                </div> <!-- title, category, rating -->
+                <div class="buttonCart">
+                    <p class="price">$2,600</p>
+                    <a href="#"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                </div> <!-- price, add to chart -->
+            </div>
+        </article>        
+        <article>
+            <div>
+                <img src="img/bottes.jpg" alt="boots for rainy days">
+            </div> <!-- image -->
+            <div class="infoArticle"> <!-- infos -->
+                <div>
+                    <h1>Coombes</h1>
+                    <p class="category">LOUNGE</p>
+                    <div class="stars">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/Star.svg">
+                    </div>
+                </div> <!-- title, category, rating -->
+                <div class="buttonCart">
+                    <p class="price">$2,600</p>
+                    <a href="#"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                </div> <!-- price, add to chart -->
+            </div>
+        </article>       
+         <article>
+            <div>
+                <img src="img/chair.jpg" alt="chair for twisted people">
+            </div> <!-- image -->
+            <div class="infoArticle"> <!-- infos -->
+                <div>
+                    <h1>Coombes</h1>
+                    <p class="category">LOUNGE</p>
+                    <div class="stars">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/Star.svg">
+                    </div>
+                </div> <!-- title, category, rating -->
+                <div class="buttonCart">
+                    <p class="price">$2,600</p>
+                    <a href="#"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                </div> <!-- price, add to chart -->
+            </div>
+        </article>        
+        <article>
+            <div>
+                <img src="img/champain.jpg" alt="champagne glasses for burning people">
+            </div> <!-- image -->
+            <div class="infoArticle"> <!-- infos -->
+                <div>
+                    <h1>Coombes</h1>
+                    <p class="category">LOUNGE</p>
+                    <div class="stars">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/Star.svg">
+                    </div>
+                </div> <!-- title, category, rating -->
+                <div class="buttonCart">
+                    <p class="price">$2,600</p>
+                    <a href="#"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                </div> <!-- price, add to chart -->
+            </div>
+        </article>       
+         <article>
+            <div>
+                <img src="img/lunette.jpg" alt="cyclope glasses">
+            </div> <!-- image -->
+            <div class="infoArticle"> <!-- infos -->
+                <div>
+                    <h1>Coombes</h1>
+                    <p class="category">LOUNGE</p>
+                    <div class="stars">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/Star.svg">
+                    </div>
+                </div> <!-- title, category, rating -->
+                <div class="buttonCart">
+                    <p class="price">$2,600</p>
+                    <a href="#"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                </div> <!-- price, add to chart -->
+            </div>
+        </article>        
+        <article>
+            <div>
+                <img src="img/marteau.jpg" alt="hammer for handy men">
+            </div> <!-- image -->
+            <div class="infoArticle"> <!-- infos -->
+                <div>
+                    <h1>Coombes</h1>
+                    <p class="category">LOUNGE</p>
+                    <div class="stars">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/StarOn.svg">
+                        <img src="img/Star.svg">
+                    </div>
+                </div> <!-- title, category, rating -->
+                <div class="buttonCart">
+                    <p class="price">$2,600</p>
+                    <a href="#"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                </div> <!-- price, add to chart -->
+            </div>
+        </article>    
+    </main>
+    <footer>
+        <ul class="non-responsive">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">&gt;</a></li>
+        </ul>
+        <ul class="responsive">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">&gt;</a></li>
+        </ul>
+
+    </footer>
+    
+</body>
+</html>
