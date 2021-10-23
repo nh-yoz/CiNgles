@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://nh-yoz.github.io/CiNgles/sitemap.xml
