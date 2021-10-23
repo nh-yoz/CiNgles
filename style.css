@@ -89,7 +89,7 @@ header {
     /* justify-content: start; */
     /* display: flex; */
     justify-content:flex-end;
-    border:1px black solid;
+    /* border:1px black solid; */
     align-items:right;
     /* justify-self:stretch; */
     align-self:start;
