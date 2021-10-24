@@ -408,7 +408,7 @@ footer .responsive {
       display: grid;
       column-gap: 50px;
       row-gap: 10px;
-      grid-template-columns: 0.7fr repeat(7, 1fr);
+      grid-template-columns: 0.5fr repeat(7, 1fr);
     }
 
 
@@ -433,7 +433,7 @@ footer .responsive {
 
     .navbar a:hover {
         background-size: 100% 2px;        
-        opacity: 1;
+        opacity: 0.6;
     }
 
 
