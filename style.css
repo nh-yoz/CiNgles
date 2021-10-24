@@ -88,7 +88,7 @@ header {
     margin: 0 1em 0 0;
     display: grid;
     row-gap: 30px;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: 1.7fr repeat(7, 1fr);
     grid-template-rows: repeat(3, auto);
 
 }
@@ -104,6 +104,10 @@ header {
     align-self: start;
 }
 
+#logo img {
+    width:100%;
+    height:auto;
+}
 
 .navbar {
     margin-top:1em;
@@ -118,10 +122,7 @@ header {
     cursor: pointer;
 }
 
-.navbar ul {
-    background-color:rgba(255, 255, 255, .8);
-    display:none;
-}
+
 
 .navbar li {
     display: flex;
@@ -135,6 +136,11 @@ nav {
 nav ul, footer ul {
     list-style-type: none;
     padding:0;
+}
+
+.navbar ul {
+    background-color:rgba(255, 255, 255, .8);
+    display:none;
 }
 
 
@@ -152,7 +158,6 @@ nav ul, footer ul {
 }
 
 .searchForm {
-    /* grid-area: searchForm; */
     display: flex;
     align-items: flex-end;
 }
@@ -169,7 +174,6 @@ div.searchForm {
 }
 
 .sajari {
-    /* grid-area: sajari; */
     display: flex;
 }
 
@@ -185,11 +189,7 @@ div.searchForm {
 }
 
 .cartlogin {
-    /* grid-area: cartlogin; */
-    /* display: flex; */
     display: block ;
-    /* align-items: center;
-    justify-content: end; */
     margin-left:auto;
     padding-top:1em; 
 }
@@ -204,6 +204,7 @@ div.searchForm {
 
 .cartlogin img, .buttonCart img {
     width:1.8em;
+    height:auto;
 }
 
 .cart {
@@ -245,8 +246,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 
-
-
 .lineform {
     border-bottom: 2px solid black;
     flex-grow:4;
@@ -256,8 +255,6 @@ input[type="search"]::-webkit-search-results-decoration {
     width:100%;
     border:0;
 }
-
-
 
 
 
@@ -294,10 +291,12 @@ h1 {
 
 .buttonCart img {
     width: 2em;
+    height: auto;
 }
 
 article img {
     width: 100%;
+    height:auto;
 }
 
 article.filter, article.responsiveFilters{
@@ -409,7 +408,7 @@ footer .responsive {
       display: grid;
       column-gap: 50px;
       row-gap: 10px;
-      grid-template-columns: repeat(8, 1fr);
+      grid-template-columns: 0.7fr repeat(7, 1fr);
     }
 
 
@@ -424,9 +423,10 @@ footer .responsive {
 
     .navbar a {
         display: inline;
+        padding: 0.3em 0.1em 0 0.1em;
         background-image: linear-gradient(rgb(0, 0,0), rgb(0, 0,0));
-        background-position: bottom;
-        background-size: 0 0;
+        background-position: center;
+        background-size: 0 2px;
         background-repeat: no-repeat;
         transition: all 0.4s ease-in-out;
     }
@@ -520,6 +520,7 @@ footer .responsive {
 
     .cartlogin img{
         width:1.5em;
+        height:auto;
     }
 
     .cartlogin {
@@ -596,6 +597,7 @@ footer .responsive {
     .overflow img {
         position: relative;
         width: 100%;
+        height: auto;
         transition: all 0.4s ease-in-out;
         filter: brightness(100%);
     }

@@ -19,24 +19,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
- 
-
 <!-- async CSS -->
-<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
-
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
 <!-- no-JS fallback -->
-<noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
-</noscript>
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+    </noscript>
 
 </head>
 <body>
     <header>
         <div id="logo">
-            <a href="#" alt="Go to home"><img src="img/Logo.svg" alt="Logo"></a>
+            <a href="#" alt="Go to home"><img src="img/Logo.svg" width="43" height="43" alt="Logo"></a>
         </div>
         <nav class="navbar">
-            <img src="img/burger.svg" width="30px" height="30px" alt="burger menu image">
+            <img src="img/burger.svg" width="30" height="30" alt="burger menu image">
             <ul>
                 <li class="login"><a href="#" alt="Login">LOGIN</a></li>
                 <li><a href="#" alt="Go to home">HOME</a></li>
@@ -49,7 +46,7 @@
             <div class="login"><a href="#" alt="Login">LOGIN</a></div>
         </div>
         <div class="picSearch">
-            <a href="#" alt="Search"><img src="img/Search.svg" alt="Search image"></a>
+            <a href="#" alt="Search"><img src="img/Search.svg" width="30" height="30" alt="Search image"></a>
         </div> <!-- picto -->
         <div class="searchForm">
             <div class="lineform">
@@ -58,7 +55,7 @@
                 </form>
             </div>
             <div class="sajari"><!-- Sajari Logo -->
-                <div id="sajariContent">Powered by <span class="bold">Algolia</span><img width=15px height="15px" src="img/SajariLogo.svg" alt="Sajari Logo"></div>
+                <div id="sajariContent">Powered by <span class="bold">Algolia</span><img width="15" height="15" src="img/SajariLogo.svg" alt="Sajari Logo"></div>
             </div> 
         </div> <!-- search input -->
         <div class="sortBy"> <!-- Best match -->
@@ -116,10 +113,10 @@
             </div>
             <div>
                 <label for="priceRange">Price range</label>
-                <input type="range" class="priceRange" id="priceRange" name="priceRange" min="0" max="100" value="90" step="10">
+                <input type="range" class="priceRange" id="priceRange" name="priceRange" min="0" max="100" value="90" step="5">
                 <div id="priceMinMax">
                     <div id="priceMin">$0</div>
-                    <div id="priceMax">$10,000+</div>
+                    <div id="priceMax">$100,000+</div>
                 </div>
             </div>
         </article> <!-- filter -->
@@ -128,24 +125,24 @@
                 <picture>
                     <source srcset="img/watering_can.webp" type="image/webp">
                     <source srcset="img/watering_can.jpg" type="image/jpg">
-                    <img src="img/watering_can.jpg" alt="useful watering can">
+                    <img class="object" src="img/watering_can.jpg" width="600" height="650" alt="useful watering can">
                 </picture>
             </div> <!-- image -->
             <div class="infoArticle"> <!-- infos -->
                 <div>
-                    <h1>Watering can</h1>
+                    <h1><a href="#" alt="See article"><a href="#" alt="See article">Watering can</a></h1>
                     <p class="category">GARDENING</p>
                     <div class="stars">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/Star.svg" alt="Star Off">
-                        <img src="img/Star.svg" alt="Star Off">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/Star.svg" alt="Star Off" width="16" height="16">
+                        <img src="img/Star.svg" alt="Star Off" width="16" height="16">
                     </div>
                 </div> <!-- title, category, rating -->
                 <div class="buttonCart">
                     <p class="price">$23,600</p>
-                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg" width="32" height="32.86" alt="Add to cart"></a>
                 </div> <!-- price, add to chart -->
             </div>
         </article>
@@ -154,24 +151,24 @@
                 <picture>
                     <source srcset="img/plate_fork.webp" type="image/webp">
                     <source srcset="img/plate_fork.jpg" type="image/jpg">
-                    <img src="img/plate_fork.jpg" alt="plate designed fork">
+                    <img src="img/plate_fork.jpg"  width="600" height="650" alt="plate designed fork">
                 </picture>
             </div> <!-- image -->
             <div class="infoArticle"> <!-- infos -->
                 <div>
-                    <h1>Plate fork</h1>
+                    <h1><a href="#" alt="See article">Plate fork</a></h1>
                     <p class="category">OUTLIFE</p>
                     <div class="stars">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
                     </div>
                 </div> <!-- title, category, rating -->
                 <div class="buttonCart">
                     <p class="price">$10,069</p>
-                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg"  width="32" height="32.86" alt="Add to cart"></a>
                 </div> <!-- price, add to chart -->
             </div>
         </article>        
@@ -180,24 +177,24 @@
                 <picture>
                     <source srcset="img/raining_boots.webp" type="image/webp">
                     <source srcset="img/raining_boots.jpg" type="image/jpg">
-                    <img src="img/raining_boots.jpg" alt="boots for rainy days">
+                    <img src="img/raining_boots.jpg"  width="600" height="650" alt="boots for rainy days">
                 </picture>
             </div> <!-- image -->
             <div class="infoArticle"> <!-- infos -->
                 <div>
-                    <h1>Rain boots</h1>
+                    <h1><a href="#" alt="See article">Rain boots</a></h1>
                     <p class="category">OUTLIFE</p>
                     <div class="stars">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/Star.svg" alt="Star Off">
-                        <img src="img/Star.svg" alt="Star Off">
-                        <img src="img/Star.svg" alt="Star Off">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/Star.svg" alt="Star Off" width="16" height="16">
+                        <img src="img/Star.svg" alt="Star Off" width="16" height="16">
+                        <img src="img/Star.svg" alt="Star Off" width="16" height="16">
                     </div>
                 </div> <!-- title, category, rating -->
                 <div class="buttonCart">
                     <p class="price">$39,997</p>
-                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg"  width="32" height="32.86" alt="Add to cart"></a>
                 </div> <!-- price, add to chart -->
             </div>
         </article>       
@@ -206,24 +203,24 @@
                 <picture>
                     <source srcset="img/wobbly_chair.webp" type="image/webp">
                     <source srcset="img/wobbly_chair.jpg" type="image/jpg">
-                    <img src="img/wobbly_chair.jpg" alt="chair for twisted people">
+                    <img src="img/wobbly_chair.jpg"  width="600" height="650" alt="chair for twisted people">
                 </picture>
             </div> <!-- image -->
             <div class="infoArticle"> <!-- infos -->
                 <div>
-                    <h1>Wobbly chair</h1>
+                    <h1><a href="#" alt="See article">Wobbly chair</a></h1>
                     <p class="category">DECORATION</p>
                     <div class="stars">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/Star.svg" alt="Star Off">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/Star.svg" alt="Star Off" width="16" height="16">
                     </div>
                 </div> <!-- title, category, rating -->
                 <div class="buttonCart">
                     <p class="price">$66,666</p>
-                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg"  width="32" height="32.86" alt="Add to cart"></a>
                 </div> <!-- price, add to chart -->
             </div>
         </article>        
@@ -232,24 +229,24 @@
                 <picture>
                     <source srcset="img/champagne_flute.webp" type="image/webp">
                     <source srcset="img/champagne_flute.jpg" type="image/jpg">
-                    <img src="img/champagne_flute.jpg" alt="champagne flute for burning people">
+                    <img src="img/champagne_flute.jpg"  width="600" height="650" alt="champagne flute for burning people">
                 </picture>
             </div> <!-- image -->
             <div class="infoArticle"> <!-- infos -->
                 <div>
-                    <h1>Champagne flute</h1>
+                    <h1><a href="#" alt="See article">Champagne flute</a></h1>
                     <p class="category">DECORATION</p>
                     <div class="stars">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
                     </div>
                 </div> <!-- title, category, rating -->
                 <div class="buttonCart">
                     <p class="price">$15,678</p>
-                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg"  width="32" height="32.86" alt="Add to cart"></a>
                 </div> <!-- price, add to chart -->
             </div>
         </article>       
@@ -258,24 +255,24 @@
                 <picture>
                     <source srcset="img/cyclope_glasses.webp" type="image/webp">
                     <source srcset="img/cyclope_glasses.jpg" type="image/jpg">
-                    <img src="img/cyclope_glasses.jpg" alt="cyclope glasses">
+                    <img src="img/cyclope_glasses.jpg"  width="600" height="650" alt="cyclope glasses">
                 </picture>
             </div> <!-- image -->
             <div class="infoArticle"> <!-- infos -->
                 <div>
-                    <h1>Cyclope glasses</h1>
+                    <h1><a href="#" alt="See article">Cyclope glasses</a></h1>
                     <p class="category">OUTLIFE</p>
                     <div class="stars">
-                        <img src="img/Star.svg" alt="Star Off">
-                        <img src="img/Star.svg" alt="Star Off">
-                        <img src="img/Star.svg" alt="Star Off">
-                        <img src="img/Star.svg" alt="Star Off">
-                        <img src="img/StarOn.svg" alt="Star On">
+                        <img src="img/Star.svg" alt="Star Off" width="16" height="16">
+                        <img src="img/Star.svg" alt="Star Off" width="16" height="16">
+                        <img src="img/Star.svg" alt="Star Off" width="16" height="16">
+                        <img src="img/Star.svg" alt="Star Off" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
                     </div>
                 </div> <!-- title, category, rating -->
                 <div class="buttonCart">
                     <p class="price">$22,333</p>
-                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg"  width="32" height="32.86" alt="Add to cart"></a>
                 </div> <!-- price, add to chart -->
             </div>
         </article>        
@@ -284,24 +281,24 @@
                 <picture>
                     <source srcset="img/hammer.webp" type="image/webp">
                     <source srcset="img/hammer.jpg" type="image/jpg">
-                    <img src="img/hammer.jpg" alt="hammer for handy men">
+                    <img src="img/hammer.jpg"  width="600" height="650" alt="hammer for handy men">
                 </picture>
             </div> <!-- image -->
             <div class="infoArticle"> <!-- infos -->
                 <div>
-                    <h1>Hammer</h1>
+                    <h1><a href="#" alt="See article">Hammer</a></h1>
                     <p class="category">GARDENING</p>
                     <div class="stars">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/StarOn.svg" alt="Star On">
-                        <img src="img/Star.svg" alt="Star Off">
-                        <img src="img/Star.svg" alt="Star Off">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/StarOn.svg" alt="Star On" width="16" height="16">
+                        <img src="img/Star.svg" alt="Star Off" width="16" height="16">
+                        <img src="img/Star.svg" alt="Star Off" width="16" height="16">
                     </div>
                 </div> <!-- title, category, rating -->
                 <div class="buttonCart">
                     <p class="price">$7,654</p>
-                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg" alt="Add to cart"></a>
+                    <a href="#" alt="Add to cart"><img src="img/CartButtonPlus.svg"  width="32" height="32.86" alt="Add to cart"></a>
                 </div> <!-- price, add to chart -->
             </div>
         </article>    
